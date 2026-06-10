@@ -85,7 +85,8 @@ import java.util.Scanner;
 
  */
 
-/*  Atividade #5
+
+ /* Atividade #5
 
 import java.util.Scanner;
 
@@ -110,10 +111,12 @@ import java.util.Scanner;
 
 }
 
- */
+ public static void main(String[] args) {
 
-/* Atividade #6
+ }
 
+
+/*
 import java.util.Scanner;
 
  public class exercicios {
@@ -165,7 +168,9 @@ import java.util.Scanner;
 
      }
 }
-*/
+
+ */
+
 
 
 
