@@ -1,6 +1,5 @@
 package Exercicios;
 
-
 import java.util.Scanner;
 
 public class EstruturasSequencial04 {
@@ -22,11 +21,6 @@ public class EstruturasSequencial04 {
         System.out.printf("SALARY = U$: " +valorRecebimento);
 
         scanner.close();
-
-
-
-
-
 
     }
 
