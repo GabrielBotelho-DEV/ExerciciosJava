@@ -1,8 +1,8 @@
 # ExerciciosJava
 
 ![Java](https://img.shields.io/badge/Java-11%2B-orange?logo=openjdk)
-![License](https://img.shields.io/github/license/Gbotelho110/ExerciciosJava)
-![Repo size](https://img.shields.io/github/repo-size/Gbotelho110/ExerciciosJava)
+![License](https://img.shields.io/github/license/AndersonTavares0/ExerciciosJava)
+![Repo size](https://img.shields.io/github/repo-size/AndersonTavares0/ExerciciosJava)
 
 Repositório de exercícios práticos em Java — desde conceitos introdutórios até pequenas aplicações de console que simulam cenários do mundo real.
 
