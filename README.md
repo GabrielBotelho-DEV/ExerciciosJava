@@ -1,4 +1,4 @@
-# ExerciciosJava
+# Exercicios Java
 
 Repositório de exercícios práticos em Java — desde conceitos introdutórios até pequenas aplicações de console que simulam cenários do mundo real.
 
