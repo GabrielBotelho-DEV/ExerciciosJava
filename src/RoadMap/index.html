@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auxiliar de Estudos — Jornada Java</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<nav>
+  <div class="nav-logo">AUX//ESTUDOS</div>
+  <ul class="nav-links">
+    <li><a href="#hero">INÍCIO</a></li>
+    <li><a href="#roadmap">ROADMAP</a></li>
+    <li><a href="#control-center">CENTRAL</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-orb orb-1"></div>
+  <div class="hero-orb orb-2"></div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">// SISTEMA INICIADO — SEQUÊNCIA DE BOOT COMPLETA</p>
+    <h1 class="hero-title">Auxiliar de<br><span>Estudos</span></h1>
+    <p class="hero-subtitle">Jornada para Desenvolvedor Java Júnior</p>
+    <p class="hero-desc">
+      12 meses de treinamento intensivo para dominar o back-end com Java e Spring Boot.
+      Cada módulo é uma missão. Cada missão, um passo mais perto do objetivo.
+    </p>
+    <a href="#roadmap" class="btn-neon">
+      <i class="fa-solid fa-bolt"></i> INICIAR JORNADA
+    </a>
+
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num">12</span>
+        <span class="stat-label">// MÓDULOS</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">01</span>
+        <span class="stat-label">// ANO</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" id="done-count">00</span>
+        <span class="stat-label">// CONCLUÍDOS</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRESS OVERVIEW -->
+<div id="progress-section">
+  <div class="progress-overview">
+    <span class="progress-label">// PROGRESSO GERAL</span>
+    <div class="progress-track">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+    <span class="progress-pct" id="progress-pct">0%</span>
+  </div>
+</div>
+
+<!-- ROADMAP -->
+<section id="roadmap">
+  <div class="section-header">
+    <p class="section-eyebrow">// PLANO DE OPERAÇÕES</p>
+    <h2 class="section-title">ROADMAP — 12 MESES</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="roadmap-grid">
+
+    <div class="month-card" data-month="1" onclick="toggleDone(this)">
+      <div class="card-header">
+        <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
+        <div class="card-meta">
+          <div class="card-month">// MÊS 01</div>
+          <div class="card-title">Lógica de Programação</div>
+        </div>
+        <div class="card-status">PENDENTE</div>
+      </div>
+      <div class="card-topics">
+        <span class="topic-tag">Variáveis</span>
+        <span class="topic-tag">Tipos de Dados</span>
+        <span class="topic-tag">Operadores</span>
+        <span class="topic-tag">if / else</span>
+        <span class="topic-tag">Loops</span>
+        <span class="topic-tag">Funções</span>
+      </div>
+      <p class="card-hint">[ CLIQUE PARA MARCAR COMO CONCLUÍDO ]</p>
+    </div>
+
+    <div class="month-card" data-month="2" onclick="toggleDone(this)">
+      <div class="card-header">
+        <div class="card-icon"><i class="fa-brands fa-java"></i></div>
+        <div class="card-meta">
+          <div class="card-month">// MÊS 02</div>
+          <div class="card-title">Java Básico</div>
+        </div>
+        <div class="card-status">PENDENTE</div>
+      </div>
+      <div class="card-topics">
+        <span class="topic-tag">Sintaxe Java</span>
+        <span class="topic-tag">Scanner</span>
+        <span class="topic-tag">Métodos</span>
+        <span class="topic-tag">Arrays</span>
+        <span class="topic-tag">Strings</span>
+        <span class="topic-tag">Debug</span>
+      </div>
+      <p class="card-hint">[ CLIQUE PARA MARCAR COMO CONCLUÍDO ]</p>
+    </div>
+
+    <div class="month-card" data-month="3" onclick="toggleDone(this)">
+      <div class="card-header">
+        <div class="card-icon"><i class="fa-solid fa-cubes"></i></div>
+        <div class="card-meta">
+          <div class="card-month">// MÊS 03</div>
+          <div class="card-title">POO</div>
+        </div>
+        <div class="card-status">PENDENTE</div>
+      </div>
+      <div class="card-topics">
+        <span class="topic-tag">Classes</span>
+        <span class="topic-tag">Objetos</span>
+        <span class="topic-tag">Construtores</span>
+        <span class="topic-tag">Encapsulamento</span>
+        <span class="topic-tag">Herança</span>
+        <span class="topic-tag">Polimorfismo</span>
+        <span class="topic-tag">Interfaces</span>
+      </div>
+      <p class="card-hint">[ CLIQUE PARA MARCAR COMO CONCLUÍDO ]</p>
+    </div>
+
+    <div class="month-card" data-month="4" onclick="toggleDone(this)">
+      <div class="card-header">
+        <div class="card-icon"><i class="fa-solid fa-layer-group"></i></div>
+        <div class="card-meta">
+          <div class="card-month">// MÊS 04</div>
+          <div class="card-title">Java Intermediário</div>
+        </div>
+        <div class="card-status">PENDENTE</div>
+      </div>
+      <div class="card-topics">
+        <span class="topic-tag">ArrayList</span>
+        <span class="topic-tag">HashMap</span>
+        <span class="topic-tag">Collections</span>
+        <span class="topic-tag">Exceptions</span>
+        <span class="topic-tag">Files</span>
+        <span class="topic-tag">Datas</span>
+      </div>
+      <p class="card-hint">[ CLIQUE PARA MARCAR COMO CONCLUÍDO ]</p>
+    </div>
+
+    <div class="month-card" data-month="5" onclick="toggleDone(this)">
+      <div class="card-header">
+        <div class="card-icon"><i class="fa-solid fa-database"></i></div>
+        <div class="card-meta">
+          <div class="card-month">// MÊS 05</div>
+          <div class="card-title">Banco de Dados</div>
+        </div>
+        <div class="card-status">PENDENTE</div>
+      </div>
+      <div class="card-topics">
+        <span class="topic-tag">SQL</span>
+        <span class="topic-tag">SELECT</span>
+        <span class="topic-tag">INSERT</span>
+        <span class="topic-tag">UPDATE</span>
+        <span class="topic-tag">DELETE</span>
+        <span class="topic-tag">JOIN</span>
+      </div>
+      <p class="card-hint">[ CLIQUE PARA MARCAR COMO CONCLUÍDO ]</p>
+    </div>
+
+    <div class="month-card" data-month="6" onclick="toggleDone(this)">
+      <div class="card-header">
+        <div class="card-icon"><i class="fa-solid fa-plug-circle-bolt"></i></div>
+        <div class="card-meta">
+          <div class="card-month">// MÊS 06</div>
+          <div class="card-title">Java + Banco</div>
+        </div>
+        <div class="card-status">PENDENTE</div>
+      </div>
+      <div class="card-topics">
+        <span class="topic-tag">JDBC</span>
+        <span class="topic-tag">DAO Pattern</span>
+        <span class="topic-tag">CRUD Completo</span>
+      </div>
+      <p class="card-hint">[ CLIQUE PARA MARCAR COMO CONCLUÍDO ]</p>
+    </div>
+
+    <div class="month-card" data-month="7" onclick="toggleDone(this)">
+      <div class="card-header">
+        <div class="card-icon"><i class="fa-brands fa-git-alt"></i></div>
+        <div class="card-meta">
+          <div class="card-month">// MÊS 07</div>
+          <div class="card-title">Git e GitHub</div>
+        </div>
+        <div class="card-status">PENDENTE</div>
+      </div>
+      <div class="card-topics">
+        <span class="topic-tag">commit</span>
+        <span class="topic-tag">push</span>
+        <span class="topic-tag">branch</span>
+        <span class="topic-tag">merge</span>
+        <span class="topic-tag">pull request</span>
+      </div>
+      <p class="card-hint">[ CLIQUE PARA MARCAR COMO CONCLUÍDO ]</p>
+    </div>
+
+    <div class="month-card" data-month="8" onclick="toggleDone(this)">
+      <div class="card-header">
+        <div class="card-icon"><i class="fa-solid fa-leaf"></i></div>
+        <div class="card-meta">
+          <div class="card-month">// MÊS 08</div>
+          <div class="card-title">Spring Boot Iniciante</div>
+        </div>
+        <div class="card-status">PENDENTE</div>
+      </div>
+      <div class="card-topics">
+        <span class="topic-tag">Maven</span>
+        <span class="topic-tag">REST API</span>
+        <span class="topic-tag">Controller</span>
+        <span class="topic-tag">Service</span>
+        <span class="topic-tag">Repository</span>
+      </div>
+      <p class="card-hint">[ CLIQUE PARA MARCAR COMO CONCLUÍDO ]</p>
+    </div>
+
+    <div class="month-card" data-month="9" onclick="toggleDone(this)">
+      <div class="card-header">
+        <div class="card-icon"><i class="fa-solid fa-seedling"></i></div>
+        <div class="card-meta">
+          <div class="card-month">// MÊS 09</div>
+          <div class="card-title">Spring Boot Intermediário</div>
+        </div>
+        <div class="card-status">PENDENTE</div>
+      </div>
+      <div class="card-topics">
+        <span class="topic-tag">JPA</span>
+        <span class="topic-tag">Hibernate</span>
+        <span class="topic-tag">DTO</span>
+        <span class="topic-tag">Validação</span>
+        <span class="topic-tag">Paginação</span>
+      </div>
+      <p class="card-hint">[ CLIQUE PARA MARCAR COMO CONCLUÍDO ]</p>
+    </div>
+
+    <div class="month-card" data-month="10" onclick="toggleDone(this)">
+      <div class="card-header">
+        <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="card-meta">
+          <div class="card-month">// MÊS 10</div>
+          <div class="card-title">Segurança</div>
+        </div>
+        <div class="card-status">PENDENTE</div>
+      </div>
+      <div class="card-topics">
+        <span class="topic-tag">Spring Security</span>
+        <span class="topic-tag">JWT</span>
+        <span class="topic-tag">Login</span>
+        <span class="topic-tag">Roles</span>
+      </div>
+      <p class="card-hint">[ CLIQUE PARA MARCAR COMO CONCLUÍDO ]</p>
+    </div>
+
+    <div class="month-card" data-month="11" onclick="toggleDone(this)">
+      <div class="card-header">
+        <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+        <div class="card-meta">
+          <div class="card-month">// MÊS 11</div>
+          <div class="card-title">Front-end Básico</div>
+        </div>
+        <div class="card-status">PENDENTE</div>
+      </div>
+      <div class="card-topics">
+        <span class="topic-tag">HTML</span>
+        <span class="topic-tag">CSS</span>
+        <span class="topic-tag">JavaScript</span>
+        <span class="topic-tag">Consumir API</span>
+      </div>
+      <p class="card-hint">[ CLIQUE PARA MARCAR COMO CONCLUÍDO ]</p>
+    </div>
+
+    <div class="month-card" data-month="12" onclick="toggleDone(this)">
+      <div class="card-header">
+        <div class="card-icon"><i class="fa-solid fa-rocket"></i></div>
+        <div class="card-meta">
+          <div class="card-month">// MÊS 12</div>
+          <div class="card-title">Emprego</div>
+        </div>
+        <div class="card-status">PENDENTE</div>
+      </div>
+      <div class="card-topics">
+        <span class="topic-tag">Portfólio</span>
+        <span class="topic-tag">Currículo</span>
+        <span class="topic-tag">LinkedIn</span>
+        <span class="topic-tag">Aplicar para Vagas</span>
+      </div>
+      <p class="card-hint">[ CLIQUE PARA MARCAR COMO CONCLUÍDO ]</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTROL CENTER -->
+<section id="control-center">
+  <div class="section-header">
+    <p class="section-eyebrow">// RECURSOS DE TREINAMENTO</p>
+    <h2 class="section-title">CENTRAL DE CONTROLE</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="modules-grid">
+
+    <a class="module-card" data-accent="cyan" href="https://youtube.com/playlist?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV&si=XCDf-q-EkOGe9Dyj" target="_blank" rel="noopener">
+      <div class="module-card-top">
+        <div class="module-icon-wrap"><i class="fa-solid fa-brain"></i></div>
+        <div class="module-info">
+          <div class="module-label">// MÊS 1 · PLAYLIST · CURSO EM VÍDEO</div>
+          <div class="module-title">Lógica de Programação — Gustavo Guanabara</div>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square module-arrow"></i>
+      </div>
+      <div class="module-card-body">
+        <p class="module-desc">Curso gratuito e didático do professor Gustavo Guanabara (Curso em Vídeo). Ensina raciocínio lógico, algoritmos e estruturas de controle desde o zero, sem exigir conhecimento prévio de programação.</p>
+        <div class="module-tags">
+          <span class="module-tag">Algoritmos</span><span class="module-tag">Variáveis</span><span class="module-tag">if / else</span><span class="module-tag">Loops</span><span class="module-tag">Funções</span><span class="module-tag">Pseudocódigo</span>
+        </div>
+      </div>
+      <div class="module-card-divider"></div>
+      <div class="module-card-footer">
+        <span class="module-badge badge-playlist"><i class="fa-brands fa-youtube"></i> PLAYLIST</span>
+        <span class="module-month-badge">// MÊS 01</span>
+      </div>
+    </a>
+
+    <a class="module-card" data-accent="purple" href="https://youtu.be/sTX0UEplF54?si=4fk461QI3spFvlfI" target="_blank" rel="noopener">
+      <div class="module-card-top">
+        <div class="module-icon-wrap"><i class="fa-brands fa-java"></i></div>
+        <div class="module-info">
+          <div class="module-label">// MÊS 2 · AULA ÚNICA · CURSO EM VÍDEO</div>
+          <div class="module-title">Java Básico — Gustavo Guanabara</div>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square module-arrow"></i>
+      </div>
+      <div class="module-card-body">
+        <p class="module-desc">Aula introdutória ao Java do professor Gustavo Guanabara. Apresenta sintaxe, tipos de dados e estruturas de decisão e laços de repetição para quem vem da lógica e quer começar na linguagem.</p>
+        <div class="module-tags">
+          <span class="module-tag">Sintaxe Java</span><span class="module-tag">Tipos de Dados</span><span class="module-tag">Estruturas</span><span class="module-tag">Scanner</span><span class="module-tag">Primeiros passos</span>
+        </div>
+      </div>
+      <div class="module-card-divider"></div>
+      <div class="module-card-footer">
+        <span class="module-badge badge-aula"><i class="fa-solid fa-play"></i> AULA ÚNICA</span>
+        <span class="module-month-badge">// MÊS 02</span>
+      </div>
+    </a>
+
+    <a class="module-card" data-accent="pink" href="https://youtube.com/playlist?list=PL62G310vn6nFIsOCC0H-C2infYgwm8SWW&si=15htopV00cIteVgo" target="_blank" rel="noopener">
+      <div class="module-card-top">
+        <div class="module-icon-wrap"><i class="fa-solid fa-dragon"></i></div>
+        <div class="module-info">
+          <div class="module-label">// MÊS 2–4 · PLAYLIST · DEVDOJO</div>
+          <div class="module-title">Maratona Java Virado no Jiraya</div>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square module-arrow"></i>
+      </div>
+      <div class="module-card-body">
+        <p class="module-desc">O curso de Java mais completo em português: +250 aulas cobrindo Java do zero até tópicos avançados. Criado por William Suane (DevDojo Academy), abrange sintaxe, POO, Collections, Generics, Streams, Threads e muito mais.</p>
+        <div class="module-tags">
+          <span class="module-tag">Java do Zero</span><span class="module-tag">POO</span><span class="module-tag">Collections</span><span class="module-tag">Generics</span><span class="module-tag">Streams</span><span class="module-tag">Threads</span>
+        </div>
+      </div>
+      <div class="module-card-divider"></div>
+      <div class="module-card-footer">
+        <span class="module-badge badge-playlist"><i class="fa-brands fa-youtube"></i> +250 AULAS</span>
+        <span class="module-month-badge">// MÊS 02–04</span>
+      </div>
+    </a>
+
+    <a class="module-card" data-accent="green" href="https://youtube.com/playlist?list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&si=MLzDKnJOrW0YjHrX" target="_blank" rel="noopener">
+      <div class="module-card-top">
+        <div class="module-icon-wrap"><i class="fa-solid fa-cubes"></i></div>
+        <div class="module-info">
+          <div class="module-label">// MÊS 3 · PLAYLIST · CURSO EM VÍDEO</div>
+          <div class="module-title">POO com Java — Gustavo Guanabara</div>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square module-arrow"></i>
+      </div>
+      <div class="module-card-body">
+        <p class="module-desc">Playlist dedicada à Orientação a Objetos em Java pelo Gustavo Guanabara. Cobre classes, objetos, construtores, encapsulamento, herança, polimorfismo e interfaces com exemplos visuais e muito didáticos.</p>
+        <div class="module-tags">
+          <span class="module-tag">Classes / Objetos</span><span class="module-tag">Construtores</span><span class="module-tag">Encapsulamento</span><span class="module-tag">Herança</span><span class="module-tag">Polimorfismo</span><span class="module-tag">Interfaces</span>
+        </div>
+      </div>
+      <div class="module-card-divider"></div>
+      <div class="module-card-footer">
+        <span class="module-badge badge-playlist"><i class="fa-brands fa-youtube"></i> PLAYLIST</span>
+        <span class="module-month-badge">// MÊS 03</span>
+      </div>
+    </a>
+
+    <a class="module-card" data-accent="cyan" href="https://youtu.be/YKHM_DUOV0k?si=8TQyi0wb3ZsLxzSh" target="_blank" rel="noopener">
+      <div class="module-card-top">
+        <div class="module-icon-wrap"><i class="fa-solid fa-video"></i></div>
+        <div class="module-info">
+          <div class="module-label">// MÊS 3 · AULA ÚNICA · CURSO EM VÍDEO</div>
+          <div class="module-title">Java na Prática — Aula Especial</div>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square module-arrow"></i>
+      </div>
+      <div class="module-card-body">
+        <p class="module-desc">Aula prática de Java com foco em fixar conceitos da linguagem com exercícios. Reforça o uso correto de estruturas de controle, métodos e classes, complementando as playlists do mês 3.</p>
+        <div class="module-tags">
+          <span class="module-tag">Exercícios práticos</span><span class="module-tag">Métodos</span><span class="module-tag">Revisão Java</span><span class="module-tag">Fixação</span>
+        </div>
+      </div>
+      <div class="module-card-divider"></div>
+      <div class="module-card-footer">
+        <span class="module-badge badge-aula"><i class="fa-solid fa-play"></i> AULA ÚNICA</span>
+        <span class="module-month-badge">// MÊS 03</span>
+      </div>
+    </a>
+
+    <a class="module-card" data-accent="purple" href="https://youtube.com/playlist?list=PLGxZ4Rq3BOBq0KXHsp5J3PxyFaBIXVs3r&si=-voQiPHfklujSb7q" target="_blank" rel="noopener">
+      <div class="module-card-top">
+        <div class="module-icon-wrap"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="module-info">
+          <div class="module-label">// MÊS 2–3 · PLAYLIST · LOIANE GRONER</div>
+          <div class="module-title">Curso Java para Iniciantes — Loiane Groner</div>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square module-arrow"></i>
+      </div>
+      <div class="module-card-body">
+        <p class="module-desc">Playlist da Java Champion Loiane Groner para iniciantes em Java. Cobre sintaxe, tipos, estruturas de controle, arrays, métodos e introdução à POO com didática clara e código bem estruturado em português.</p>
+        <div class="module-tags">
+          <span class="module-tag">Java Básico</span><span class="module-tag">Sintaxe</span><span class="module-tag">Arrays</span><span class="module-tag">Métodos</span><span class="module-tag">POO Intro</span>
+        </div>
+      </div>
+      <div class="module-card-divider"></div>
+      <div class="module-card-footer">
+        <span class="module-badge badge-playlist"><i class="fa-brands fa-youtube"></i> PLAYLIST</span>
+        <span class="module-month-badge">// MÊS 02–03</span>
+      </div>
+    </a>
+
+    <a class="module-card" data-accent="pink" href="https://youtube.com/playlist?list=PLGxZ4Rq3BOBrgumpzz-l8kFMw2DLERdxi&si=KKfaEWh7OHCfUMiY" target="_blank" rel="noopener">
+      <div class="module-card-top">
+        <div class="module-icon-wrap"><i class="fa-solid fa-layer-group"></i></div>
+        <div class="module-info">
+          <div class="module-label">// MÊS 4 · PLAYLIST · LOIANE GRONER</div>
+          <div class="module-title">Java Intermediário — Loiane Groner</div>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square module-arrow"></i>
+      </div>
+      <div class="module-card-body">
+        <p class="module-desc">Playlist de Java intermediário da Loiane Groner. Aprofunda Collections, Generics, tratamento de exceções, manipulação de datas com a nova API (LocalDate/LocalDateTime) e boas práticas da linguagem Java.</p>
+        <div class="module-tags">
+          <span class="module-tag">Collections</span><span class="module-tag">Generics</span><span class="module-tag">Exceptions</span><span class="module-tag">LocalDate</span><span class="module-tag">Boas Práticas</span>
+        </div>
+      </div>
+      <div class="module-card-divider"></div>
+      <div class="module-card-footer">
+        <span class="module-badge badge-playlist"><i class="fa-brands fa-youtube"></i> PLAYLIST</span>
+        <span class="module-month-badge">// MÊS 04</span>
+      </div>
+    </a>
+
+    <a class="module-card" data-accent="green" href="https://youtube.com/playlist?list=PLHz_AreHm4dkBs-795Dsgvau_ekxg8g1r&si=b8ZH1HbJe2bhbA3D" target="_blank" rel="noopener">
+      <div class="module-card-top">
+        <div class="module-icon-wrap"><i class="fa-solid fa-database"></i></div>
+        <div class="module-info">
+          <div class="module-label">// MÊS 5 · PLAYLIST · CURSO EM VÍDEO</div>
+          <div class="module-title">Banco de Dados MySQL — Gustavo Guanabara</div>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square module-arrow"></i>
+      </div>
+      <div class="module-card-body">
+        <p class="module-desc">Curso gratuito de MySQL do Gustavo Guanabara com 19 aulas. Cobre modelagem relacional, instalação do MySQL, DDL/DML completo com SELECT, INSERT, UPDATE, DELETE e JOINs com exemplos de projetos reais.</p>
+        <div class="module-tags">
+          <span class="module-tag">MySQL</span><span class="module-tag">SELECT / JOIN</span><span class="module-tag">INSERT / UPDATE</span><span class="module-tag">DELETE</span><span class="module-tag">Modelagem</span><span class="module-tag">DDL / DML</span>
+        </div>
+      </div>
+      <div class="module-card-divider"></div>
+      <div class="module-card-footer">
+        <span class="module-badge badge-playlist"><i class="fa-brands fa-youtube"></i> 19 AULAS</span>
+        <span class="module-month-badge">// MÊS 05</span>
+      </div>
+    </a>
+
+    <a class="module-card" data-accent="cyan" href="https://youtube.com/playlist?list=PL62G310vn6nFBIxp6ZwGnm8xMcGE3VA5H&si=QTLhMO0naM-htxBM" target="_blank" rel="noopener">
+      <div class="module-card-top">
+        <div class="module-icon-wrap"><i class="fa-solid fa-plug-circle-bolt"></i></div>
+        <div class="module-info">
+          <div class="module-label">// MÊS 6–8 · PLAYLIST · DEVDOJO</div>
+          <div class="module-title">Spring Boot 2 Essentials — DevDojo</div>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square module-arrow"></i>
+      </div>
+      <div class="module-card-body">
+        <p class="module-desc">Playlist completa de Spring Boot 2 pela DevDojo Academy. Cobre criação de APIs REST, Spring Data JPA, Docker, Spring Security, testes unitários e de integração — foco em qualidade de produção real.</p>
+        <div class="module-tags">
+          <span class="module-tag">Spring Boot 2</span><span class="module-tag">REST API</span><span class="module-tag">Spring Data JPA</span><span class="module-tag">Docker</span><span class="module-tag">Spring Security</span><span class="module-tag">Testes</span>
+        </div>
+      </div>
+      <div class="module-card-divider"></div>
+      <div class="module-card-footer">
+        <span class="module-badge badge-playlist"><i class="fa-brands fa-youtube"></i> PLAYLIST</span>
+        <span class="module-month-badge">// MÊS 06–08</span>
+      </div>
+    </a>
+
+    <a class="module-card" data-accent="purple" href="https://youtube.com/playlist?list=PLcoYAcR89n-qbO7YAVj5S0alABLis_QVU&si=jR4U1t5nrKetU19v" target="_blank" rel="noopener">
+      <div class="module-card-top">
+        <div class="module-icon-wrap"><i class="fa-brands fa-git-alt"></i></div>
+        <div class="module-info">
+          <div class="module-label">// MÊS 7 · PLAYLIST</div>
+          <div class="module-title">Curso Gratuito de Git e GitHub</div>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square module-arrow"></i>
+      </div>
+      <div class="module-card-body">
+        <p class="module-desc">Playlist completa e gratuita de Git e GitHub em português. Ensina versionamento profissional com os principais comandos, criação e gerenciamento de branches, merge, resolução de conflitos e pull requests.</p>
+        <div class="module-tags">
+          <span class="module-tag">git init / clone</span><span class="module-tag">commit / push</span><span class="module-tag">branch / merge</span><span class="module-tag">Pull Request</span><span class="module-tag">Conflitos</span><span class="module-tag">GitHub</span>
+        </div>
+      </div>
+      <div class="module-card-divider"></div>
+      <div class="module-card-footer">
+        <span class="module-badge badge-playlist"><i class="fa-brands fa-youtube"></i> PLAYLIST</span>
+        <span class="module-month-badge">// MÊS 07</span>
+      </div>
+    </a>
+
+    <a class="module-card" data-accent="pink" href="https://youtube.com/playlist?list=PLGxZ4Rq3BOBoqYyFWOV_YbfBW80YGAGEI&si=LBpRAW97LHjGkkax" target="_blank" rel="noopener">
+      <div class="module-card-top">
+        <div class="module-icon-wrap"><i class="fa-solid fa-leaf"></i></div>
+        <div class="module-info">
+          <div class="module-label">// MÊS 8–9 · PLAYLIST · LOIANE GRONER</div>
+          <div class="module-title">Spring Boot — Loiane Groner</div>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square module-arrow"></i>
+      </div>
+      <div class="module-card-body">
+        <p class="module-desc">Playlist de Spring Boot da Java Champion Loiane Groner. Cobre desde o Spring Initializr até APIs REST completas com Spring Data JPA, relacionamentos entre entidades, DTOs e validações com Bean Validation.</p>
+        <div class="module-tags">
+          <span class="module-tag">Spring Initializr</span><span class="module-tag">REST API</span><span class="module-tag">Spring Data JPA</span><span class="module-tag">DTOs</span><span class="module-tag">Validação</span><span class="module-tag">Relacionamentos</span>
+        </div>
+      </div>
+      <div class="module-card-divider"></div>
+      <div class="module-card-footer">
+        <span class="module-badge badge-playlist"><i class="fa-brands fa-youtube"></i> PLAYLIST</span>
+        <span class="module-month-badge">// MÊS 08–09</span>
+      </div>
+    </a>
+
+    <a class="module-card" data-accent="green" href="https://youtube.com/playlist?list=PLNCSWIsR6ADI_wMAx9F-Iu8Hs9HHxj4sb&si=xbfNi3X-jBHq1eGo" target="_blank" rel="noopener">
+      <div class="module-card-top">
+        <div class="module-icon-wrap"><i class="fa-solid fa-seedling"></i></div>
+        <div class="module-info">
+          <div class="module-label">// MÊS 9 · PLAYLIST</div>
+          <div class="module-title">JPA e Hibernate na Prática</div>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square module-arrow"></i>
+      </div>
+      <div class="module-card-body">
+        <p class="module-desc">Playlist focada em persistência com JPA e Hibernate integrado ao Spring Boot. Aborda entidades, mapeamentos de relacionamentos (@OneToMany, @ManyToMany), ciclo de vida dos objetos e paginação de resultados.</p>
+        <div class="module-tags">
+          <span class="module-tag">JPA / Hibernate</span><span class="module-tag">Entidades</span><span class="module-tag">@OneToMany</span><span class="module-tag">@ManyToMany</span><span class="module-tag">JPQL</span><span class="module-tag">Paginação</span>
+        </div>
+      </div>
+      <div class="module-card-divider"></div>
+      <div class="module-card-footer">
+        <span class="module-badge badge-playlist"><i class="fa-brands fa-youtube"></i> PLAYLIST</span>
+        <span class="module-month-badge">// MÊS 09</span>
+      </div>
+    </a>
+
+    <a class="module-card" data-accent="cyan" href="https://youtu.be/YY_hf0FOIcU?si=mdv4cbGsP0KsEHh_" target="_blank" rel="noopener">
+      <div class="module-card-top">
+        <div class="module-icon-wrap"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="module-info">
+          <div class="module-label">// MÊS 10 · AULA ÚNICA</div>
+          <div class="module-title">Spring Security + JWT — Aula Completa</div>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square module-arrow"></i>
+      </div>
+      <div class="module-card-body">
+        <p class="module-desc">Aula prática e completa de Spring Security com autenticação JWT. Configura a cadeia de filtros de segurança, implementa login com geração de token, valida tokens nas requisições e protege rotas por roles de usuário.</p>
+        <div class="module-tags">
+          <span class="module-tag">Spring Security</span><span class="module-tag">JWT</span><span class="module-tag">Login endpoint</span><span class="module-tag">FilterChain</span><span class="module-tag">Roles</span>
+        </div>
+      </div>
+      <div class="module-card-divider"></div>
+      <div class="module-card-footer">
+        <span class="module-badge badge-aula"><i class="fa-solid fa-play"></i> AULA ÚNICA</span>
+        <span class="module-month-badge">// MÊS 10</span>
+      </div>
+    </a>
+
+    <a class="module-card" data-accent="purple" href="https://youtube.com/playlist?list=PLiFLtuN04BS2GSi8Q-haYkRy8KEv6Grvf&si=TufXBa63yqgh3yTU" target="_blank" rel="noopener">
+      <div class="module-card-top">
+        <div class="module-icon-wrap"><i class="fa-solid fa-key"></i></div>
+        <div class="module-info">
+          <div class="module-label">// MÊS 10 · PLAYLIST</div>
+          <div class="module-title">Playlist Spring Security e JWT</div>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square module-arrow"></i>
+      </div>
+      <div class="module-card-body">
+        <p class="module-desc">Playlist completa sobre segurança em APIs Spring Boot. Aborda autenticação stateless com JWT, geração e validação de tokens, refresh token, controle de acesso por roles e proteção de endpoints com filtros HTTP.</p>
+        <div class="module-tags">
+          <span class="module-tag">JWT Completo</span><span class="module-tag">Refresh Token</span><span class="module-tag">Autenticação</span><span class="module-tag">Autorização</span><span class="module-tag">Filtros HTTP</span>
+        </div>
+      </div>
+      <div class="module-card-divider"></div>
+      <div class="module-card-footer">
+        <span class="module-badge badge-playlist"><i class="fa-brands fa-youtube"></i> PLAYLIST</span>
+        <span class="module-month-badge">// MÊS 10</span>
+      </div>
+    </a>
+
+    <a class="module-card" data-accent="pink" href="https://youtu.be/nODe5lFcGpg?si=mCqDgo4_87e0v7DD" target="_blank" rel="noopener">
+      <div class="module-card-top">
+        <div class="module-icon-wrap"><i class="fa-solid fa-code"></i></div>
+        <div class="module-info">
+          <div class="module-label">// MÊS 11 · AULA ÚNICA</div>
+          <div class="module-title">Front-end para Devs Back-end — HTML/CSS/JS</div>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square module-arrow"></i>
+      </div>
+      <div class="module-card-body">
+        <p class="module-desc">Aula focada em quem vem do back-end e precisa criar uma interface para o portfólio. Ensina HTML5, CSS3 e JavaScript básico com foco em consumir uma API REST com fetch() e exibir dados dinamicamente na tela.</p>
+        <div class="module-tags">
+          <span class="module-tag">HTML5</span><span class="module-tag">CSS3</span><span class="module-tag">JavaScript</span><span class="module-tag">fetch() / API</span><span class="module-tag">DOM</span><span class="module-tag">Portfólio</span>
+        </div>
+      </div>
+      <div class="module-card-divider"></div>
+      <div class="module-card-footer">
+        <span class="module-badge badge-aula"><i class="fa-solid fa-play"></i> AULA ÚNICA</span>
+        <span class="module-month-badge">// MÊS 11</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<footer>
+  <p class="footer-text">// SISTEMA <span>AUXILIAR DE ESTUDOS</span> — JORNADA JAVA JÚNIOR &nbsp;·&nbsp; 12 MESES &nbsp;·&nbsp; MISSÃO: <span>EMPREGABILIDADE</span></p>
+</footer>
+
+<div id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
